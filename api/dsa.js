@@ -7,6 +7,9 @@ import nodemailer from "nodemailer";
 // ======================
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 // const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+const models = await genAI.listModels();
+console.log(models);
+
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
 // ======================
