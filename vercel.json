@@ -1,5 +1,5 @@
 {
-  "cron": [
+  "crons": [
     {
       "path": "/api/dsa",
       "schedule": "0 */4 * * *"
