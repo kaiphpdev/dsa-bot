@@ -31,14 +31,14 @@ export default async function handler(req, res) {
   try {
     console.log("🚀 DSA Job Started");
 
-    // ======================
-    // 🎲 RANDOM EXECUTION (optional)
-    // ======================
-    const shouldRun = Math.random() < 0.5; // 50% chance
-    if (!shouldRun) {
-      console.log("⏭ Skipped this run");
-      return res.status(200).json({ skipped: true });
-    }
+    // // ======================
+    // // 🎲 RANDOM EXECUTION (optional)
+    // // ======================
+    // const shouldRun = Math.random() < 0.5; // 50% chance
+    // if (!shouldRun) {
+    //   console.log("⏭ Skipped this run");
+    //   return res.status(200).json({ skipped: true });
+    // }
 
     // ======================
     // 📥 FETCH OLD QUESTIONS
